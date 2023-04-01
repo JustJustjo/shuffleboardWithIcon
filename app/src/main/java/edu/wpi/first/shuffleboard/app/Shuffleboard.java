@@ -32,6 +32,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -124,6 +125,7 @@ public class Shuffleboard extends Application {
     });
 
     primaryStage.setTitle("Shuffleboard");
+    primaryStage.getIcons().add(new Image("edu/wpi/first/shuffleboard/app/icons/shuffleboard-icon.png"));
     primaryStage.setMinWidth(640);
     primaryStage.setMinHeight(480);
     primaryStage.setWidth(Screen.getPrimary().getVisualBounds().getWidth());
